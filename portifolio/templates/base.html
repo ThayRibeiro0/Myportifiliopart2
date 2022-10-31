@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../static/base.css" />
+
+    <script src="https://livejs.com/live.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>{% block title %}Home{% endblock%}</title>
+  
+  </head>
+<body>
+  <header id="header" class="d-flex-column justify-content-center">
+
+    <div class="nav-item nav-rounded nav-link nav-toggle" title="Menu" txt-white id="menu" onclick="togglenav()">
+      <i class="material-icons">menu</i>
+    </div>
+
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul class="links">
+        <li>
+          <a class="nav-item nav-rounded nav-link active" txt-white id="home" href="#home">
+            <i class="material-icons" >home</i>  <i id="name-menu">Home</i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="about" href="#about">
+            <i class="material-icons">person</i> <i id="name-menu">About</i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="experiences" href="#experiences">
+            <i class="material-icons">work</i> <i id="name-menu">Experiences</i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="skills" href="#skills">
+            <i class="material-icons">note</i> <i id="name-menu">Skills</i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="contact" href="#contact">
+            <i class="material-icons">call</i> <i id="name-menu">Contact</i>
+          </a>
+        </li>
+      </ul>
+    </header>
+  </nav>
+</header>
+
+    <main class="home" id="page">{% include './home.html' %}</main>
+    <main class="about" id="page">{% include './about.html' %}</main>
+    <main class="experiences" id="page">{% include './experiences.html' %}</main>
+    <main class="skills" id="page">{% include './skills.html' %}</main>
+    <main class="contact" id="page">{% include './contact.html' %}</main>
+   
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+  </body>
+</html>
