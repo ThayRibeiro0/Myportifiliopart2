@@ -286,14 +286,13 @@ div.col-3 {
   padding: 8px 30px;
   border-radius: 40px;
   background: #fff ;
-  color: #261b1a;
+  color: gray;
   font-size: 1.5em;
   z-index: 9;
   transform: translateY(100px);
   font-family: Centra, sans-serif;
   font-weight: bold;
 }
-
 
 /* footer */
 .social-links img{
@@ -333,4 +332,78 @@ main#page.contact{
 
 main#page{
   min-height: 101vh;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  margin: auto;
+  transform: translate(80vh, 30%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #f46569;
+}
+
+.content h2:nth-child(2) {
+  color: #f72727;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.text1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  color: gray;
+  margin: 200px 300px;
+  height: 100vh;
+  align-content: center;
+}
+
+
+div .img1{
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  margin-top: 100px;
+  margin: 0, 0;
 }
