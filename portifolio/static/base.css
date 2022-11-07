@@ -19,6 +19,8 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* header */
@@ -205,6 +207,27 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-container{
+    max-width: 608px;
+  }
+  .article-card{
+    display: grid;
+    grid-template-rows: 220px 1fr;  
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .site-container{
+    max-width: 1156px;
+  }
+  .article-card{
+    display: grid;
+    grid-template-rows: 220px 1fr;  
+  }
+}
+
+
 /* main */
 
 div.container {
@@ -327,7 +350,7 @@ main#page.about{
 }
 
 main#page.experiences{
-  background-color: gray;
+  background-color: rgb(198, 198, 198);
   width: 206vh;
   height: 101vh;
 }
@@ -365,6 +388,35 @@ main#page{
   display: flex;
   width: 100%;
   margin-left: 200px;
+}
+
+.content3 {
+  background-color: yellow;
+  display: flex;
+  width: 119%;
+  justify-content: center;
+}
+
+.content3 h2{
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  margin: auto;
+  margin-top: -89px;
+  margin-left: 95px;
+  width: 100%;
+  align-content: center;
+  transform: translate(60vh, 120%);
+}
+
+.content3 h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.content3 h2:nth-child(2) {
+  color: #fff;
+  animation: animate 4s ease-in-out infinite;
 }
 
 .content h2 {
@@ -421,7 +473,7 @@ main#page{
 }
 
 .about{
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   background: white;
   display: flex;
@@ -462,3 +514,68 @@ a#btn2{
   line-height: 33px;
   margin-bottom: 37px;
 }
+
+.site-container{
+  display: flex;
+  margin: 2rem auto;
+  max-width: calc(100% - 80px);
+}
+
+.article-container {
+  margin-top: 170px;
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px;
+}
+
+.article-card{
+  background: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.article-card:hover{
+  box-shadow: 0 4px 20px 0 gray;
+  cursor: pointer;
+}
+
+.article-content{
+  padding: 2rem;
+  color: gray;
+}
+
+.article-content .card-category{
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #6b82a7;
+  display: block;
+  text-decoration: none;
+}
+
+.article-content .card-title {
+  margin: 1rem 0;
+  color: #f72727;
+}
+
+.article-content .card-excerpt{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6b82a7;
+  margin: 0;
+}
+
