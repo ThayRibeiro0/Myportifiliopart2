@@ -518,11 +518,11 @@ a#btn2{
 .site-container{
   display: flex;
   margin: 2rem auto;
-  max-width: calc(100% - 80px);
+  max-width: calc(100% - 50px);
 }
 
 .article-container {
-  margin-top: 170px;
+  margin-top: 90px;
   margin-left: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -564,11 +564,14 @@ a#btn2{
   font-weight: 600;
   color: #6b82a7;
   display: block;
+  margin-top: -30px;
   text-decoration: none;
 }
 
 .article-content .card-title {
   margin: 1rem 0;
+  margin-top: 10px;
+  margin-bottom: 1px;
   color: #f72727;
 }
 
