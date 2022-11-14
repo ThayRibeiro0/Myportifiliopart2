@@ -29,7 +29,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 9997;
+  z-index: 1;
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
@@ -515,6 +515,76 @@ a#btn2{
   margin-bottom: 37px;
 }
 
+.flip-card{
+  height: 100px;
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.swiper{
+  width: 150px;
+}
+
+.flip-card-back{
+  background-color: #fff;
+  color: gray;
+  border-radius: 21px;
+  transform: rotateY(180deg);
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  backface-visibility: hidden;
+}
+
+.flip-card-back .back-header{
+  height: 45%;
+  text-align: center;
+}
+
+
+.flip-card-back .back-header h2{
+  color: #f72727;
+}
+
+.flip-card-inner{
+  position: relative;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner .flip-card-front{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+img.code{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.flip-card-back .back-footer{
+  height: 55%;
+  padding: 0 15px;
+}
+
+
+
+/* 
 .site-container{
   display: flex;
   margin: 2rem auto;
@@ -581,4 +651,4 @@ a#btn2{
   color: #6b82a7;
   margin: 0;
 }
-
+ */
