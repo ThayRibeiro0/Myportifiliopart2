@@ -515,6 +515,103 @@ a#btn2{
   margin-bottom: 37px;
 }
 
+.move-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-content,
+.text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+
+}
+
+.pic-content{
+  position: relative;
+  row-gap: 5px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../static/code.png);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.move-content{
+  margin: 0 40px;
+}
+
+.box{
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.box-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.box-image .box-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f72727;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 500px;
+  margin-bottom: -10px;
+  color: #333;
+}
+
+.title{
+  font-style: italic;
+  font-size: 16px;
+}
+
+.description{
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #f72727;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background-color: #f46569;
+}
+
+
+
+
+/* 
+
 .flip-card{
   height: 100px;
   display: flex;
@@ -582,7 +679,7 @@ img.code{
   padding: 0 15px;
 }
 
-
+ */
 
 /* 
 .site-container{
