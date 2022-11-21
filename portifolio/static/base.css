@@ -843,3 +843,82 @@ section.experience2{
   font-size: 20px;
   font-weight: 500;
 }
+
+div.contactFrom{
+  display: flex;
+  flex-direction: column;
+  margin-left: 265px;
+  margin-top: 100px;
+}
+
+.contactFrom h2{
+  color: #dc2828;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.contactFrom .formBox{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 75px;
+  padding-top: 10px;
+}
+
+.contactFrom .formBox .inputBox{
+  position: relative;
+  margin-bottom: 35px;  
+}
+
+.contactFrom .formBox .inputBox .w50{
+  width: 47%;  
+}
+
+.contactFrom .formBox .inputBox .w100{
+  width: 100%;  
+}
+
+.contactFrom .formBox .inputBox input,
+.contactFrom .formBox .inputBox textarea{
+  width: 100%;  
+  resize: none;
+  padding: 5px 0;
+  font-size: 26px;
+  font-weight: 300;
+  color: black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+
+.contactFrom .formBox .inputBox textarea{
+  height: 120px;
+}
+
+.contactFrom .formBox .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.container2 .contactFrom .formBox .inputBox input:focus ~ span,
+.container2 .contactFrom .formBox .inputBox input:valid ~ span,
+.container2 .contactFrom .formBox .inputBox textarea:focus ~ span,
+.container2 .contactFrom .formBox .inputBox textarea:valid ~ span
+{
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #dc2828;
+  font-weight: 500;
+}
+
+.botton{
+  margin-left: -100px;
+}
