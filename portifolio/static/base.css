@@ -787,13 +787,13 @@ section.experience2{
 
 .each-skills{
   columns: 2;
-  height: 700px;
+  height: 600px;
 }
 
 .myskills .mh-profissional-skills{
-  padding-right:290px;
+  padding-right:100px;
   color: rgb(51, 51, 51);
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 .myskills .mh-profissional-skills h3{
@@ -801,7 +801,6 @@ section.experience2{
   margin-top: 200px;
   text-align: center;
   font-weight: 800;
-  margin-left: -100px;
   margin-bottom: 60px;
 }
 
@@ -816,67 +815,6 @@ img.js{
   width: 40px;
   height: 40px;
   border-radius: 10px;
-}
-
-.mh-profissional-skills h3{
-  font-size: 30px;
-  line-height: 10px;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-
-.mh-profissional-progress{
-  width: 300px;
-}
-
-.mh-profissional-progress li{
-  display: inline-block;
-  margin: 0 auto;
-  float: none;
-  width: 40%;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.mh-progress{
-  margin-bottom: 10px;
-  font: 900 1.14285/1 Cinzerl, cursive;
-  color: rgb(160, 141, 141);
-}
-
-.mh-progress .progressbar-text{
-  color: #333 !important;
-}
-
-.progress.progressbar-line{
-  height: 10px;
-  margin-right: 60px;
-}
-
-.progress.progressbar-line .progressbar-text{
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 60px;
-  transform: translateY(-35%);
-  text-align: center;
-}
-
-.mh-progress.mh-profissional-circle{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-}
-
-.mh-progress path:nth-child(1)
-{
-  stroke: #e8e4e3;
-}
-
-.mh-progress path:nth-child(2)
-{
-  stroke: rgba(240, 213, 81, 0.998);
 }
 
 .candidatos{
@@ -954,6 +892,13 @@ img.js{
   
 }
 
+svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+  columns: 2;
+}
 
 /* /Contact/ */
 .container2{
