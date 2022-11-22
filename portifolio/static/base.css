@@ -23,7 +23,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* header */
+/* Navebar*/
 #header {
   position: fixed;
   top: 0;
@@ -228,8 +228,7 @@ nav ul li a:hover {
 }
 
 
-/* main */
-
+/* main home*/
 div.container {
   display: flex;
   justify-content: space-between;
@@ -343,6 +342,7 @@ a#btn{
   text-align: center;
 }
 
+/* /About/ */
 main#page.about{
   background-color: white;
   width: 206vh;
@@ -350,19 +350,22 @@ main#page.about{
 }
 
 main#page.experiences{
-  background-color: rgb(198, 198, 198);
+  background-image: url(../static/exper.png);
+  background-size: cover;
   width: 206vh;
   height: 101vh;
 }
 
 main#page.skills{
-  background-color: blueviolet;
+  background-image: url(../static/skills.jpg);
   width: 206vh;
   height: 101vh;
+  display: inline-block;
+  columns: 2;
 }
 
 main#page.contact{
-  background-color: rgba(226, 144, 81, 0.8);
+  background-image:url(../static/contact.png);
   width: 206vh;
   height: 101vh;
 } */
@@ -380,7 +383,7 @@ main#page{
   width: 118%;
   columns: 3;
   flex-direction: row;
-  color: gray;
+  color:gray;
 }
 
 .content {
@@ -515,13 +518,14 @@ a#btn2{
   margin-bottom: 37px;
 }
 
+/* /Exoeriences/ */
 .move-container{
   max-width: 1405px;
   margin-left: 10%;
   margin-top: 12%;
   display: flex;
   padding: 40px 0;
-  background: #e8e4e3;
+  background-image: url(../static/experiencemd.png);
   border-radius: 20px;
 }
 
@@ -779,6 +783,179 @@ section.experience2{
   
 }
 
+/* /Skills/ */
+
+.each-skills{
+  columns: 2;
+  height: 700px;
+}
+
+.myskills .mh-profissional-skills{
+  padding-right:290px;
+  color: rgb(51, 51, 51);
+  margin-left: 200px;
+}
+
+.myskills .mh-profissional-skills h3{
+  font-size: 30px;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: 800;
+  margin-left: -100px;
+  margin-bottom: 60px;
+}
+
+.mh-profissional-skills{
+  margin-top: 50px;
+  padding-left: 20%;
+  color: #333;
+  flex-direction: column;
+}
+
+img.js{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.mh-profissional-skills h3{
+  font-size: 30px;
+  line-height: 10px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.mh-profissional-progress{
+  width: 300px;
+}
+
+.mh-profissional-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 40%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mh-progress{
+  margin-bottom: 10px;
+  font: 900 1.14285/1 Cinzerl, cursive;
+  color: rgb(160, 141, 141);
+}
+
+.mh-progress .progressbar-text{
+  color: #333 !important;
+}
+
+.progress.progressbar-line{
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progressbar-line .progressbar-text{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translateY(-35%);
+  text-align: center;
+}
+
+.mh-progress.mh-profissional-circle{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.mh-progress path:nth-child(1)
+{
+  stroke: #e8e4e3;
+}
+
+.mh-progress path:nth-child(2)
+{
+  stroke: rgba(240, 213, 81, 0.998);
+}
+
+.candidatos{
+  position: relative;
+  margin-bottom: 15px;
+
+}
+
+.candidatos .parcial{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.candidatos .parcial .info{
+  position: relative;
+}
+
+.candidatos .parcial .info .name3{
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.candidatos .parcial .info .percentagem-num{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.candidatos .parcial .progressBar{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5);  
+}
+
+.candidatos .parcial .percentagem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(240, 213, 81, 0.998);
+  -webkit-transition: 3s all;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: animationProgress;
+  transition: 3s all;
+}
+
+.mh-skills-inner{
+  margin-left: 200px;
+  margin-right: -200px;
+}
+
+.row2{
+  margin-top: 50px;
+  margin-left: -100px;
+}
+
+@keyframes animationProgress {
+  from{
+    width: 0;
+  }
+  
+}
+
+
+/* /Contact/ */
 .container2{
   position: relative;
   min-width: 1100px;
@@ -793,10 +970,11 @@ section.experience2{
 .container2 .contactInfo{
   position: absolute;
   top: 80px;
-  width: 390px;
+  margin-right: 300px;
+  width: 360px;
   height: calc(100% - 200px);
   border-radius: 20px;
-  background-color: rgba(226, 144, 81, 0.8);
+  background-image: url(../static/contact.png);
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -804,7 +982,7 @@ section.experience2{
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 20px 25px rgb(27, 26, 26);
-  margin-left: -150px;
+  margin-left: -200px;
 }
 
 .container2 .contactInfo h2{
@@ -839,7 +1017,7 @@ section.experience2{
 
 .container2 .contactInfo ul.info li span:nth-child(2){
   color: #fff;
-  margin-left: 10px;
+  margin-left: 11px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -847,7 +1025,7 @@ section.experience2{
 div.contactFrom{
   display: flex;
   flex-direction: column;
-  margin-left: 265px;
+  margin-left: 199px;
   margin-top: 100px;
 }
 
@@ -860,9 +1038,7 @@ div.contactFrom{
 .contactFrom .formBox{
   position: relative;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 75px;
   padding-top: 10px;
 }
 
@@ -921,4 +1097,86 @@ div.contactFrom{
 
 .botton{
   margin-left: -100px;
+}
+
+.container2 .contactFrom .formBox .inputBox input[type="submit"]{
+  position: relative;
+  cursor: pointer;
+  background: #dc2828;
+  color: #fff;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+}
+
+@media (max-width: 1200px){
+  .container2{
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+    box-shadow: 0 20px 50px #333;
+  }
+  .contactInfo{
+    top: 0;
+    height: 500px;
+    position: relative;
+    box-shadow: none;
+  }
+  .container2 .contactFrom{
+    position: relative;
+    width: calc(100% - 350px);
+    padding-left: 0;
+    margin-left: 0;
+    padding: 40px;
+    height: 550px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 991px){
+  section{
+    background: #fff;
+  }
+  section::before{
+    display: inline;
+  }
+  .container2{
+    display: flex;
+    flex-direction: column-reverse ;
+  }
+  .container2 .contactFrom{
+    width: 100%;
+    height: auto;
+  }
+  .container2 .contactInfo{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+  .container2 .contactInfo ul.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px){
+  .container2 .contactFrom{
+    padding: 25px;
+  }
+  .container2 .contactInfo{
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container2 .contactInfo ul.sci{
+    margin-top: 40px;
+  }
+  .contactFrom .formBox .inputBox .w50{
+    width: 100%;  
+  }
 }
