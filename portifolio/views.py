@@ -21,6 +21,9 @@ def about():
 def experiences():
     return render_template("experiences.html")
 
+@views.route('/education')
+def education():
+    return render_template("education.html")
 # def map():
 #     austin = (-97.75, 30.25)
 #     hawaii = (-157.8, 21.3)
@@ -48,6 +51,10 @@ def experiences():
 @views.route('/skills')
 def skills():
     return render_template("skills.html")
+
+@views.route('/portifolio')
+def portifolio():
+    return render_template("portifolio.html")
 
 @views.route('/contact')
 def contact():

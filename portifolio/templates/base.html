@@ -45,8 +45,18 @@
           </a>
         </li>
         <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="education" href="#education">
+            <i class="material-icons">school</i> <i id="name-menu">Education</i>
+          </a>
+        </li>
+        <li>
           <a class="nav-item nav-rounded nav-link" txt-white id="skills" href="#skills">
-            <i class="material-icons">note</i> <i id="name-menu">Skills</i>
+            <i class="material-icons">list</i> <i id="name-menu">Skills</i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-rounded nav-link" txt-white id="portifolio" href="#portifolio">
+            <i class="material-icons">assignment_ind</i> <i id="name-menu">Portifolio</i>
           </a>
         </li>
         <li>
@@ -62,7 +72,9 @@
     <main class="home" id="page">{% include './home.html' %}</main>
     <main class="about" id="page">{% include './about.html' %}</main>
     <main class="experiences" id="page">{% include './experiences.html' %}</main>
+    <main class="education" id="page">{% include './education.html' %}</main>
     <main class="skills" id="page">{% include './skills.html' %}</main>
+    <main class="portifolio" id="page">{% include './portifolio.html' %}</main>
     <main class="contact" id="page">{% include './contact.html' %}</main>
    
     <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>

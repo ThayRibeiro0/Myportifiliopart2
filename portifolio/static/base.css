@@ -346,7 +346,7 @@ a#btn{
 main#page.about{
   background-color: white;
   width: 206vh;
-  height: 101vh;
+  height: 103vh;
 }
 
 main#page.experiences{
@@ -354,16 +354,30 @@ main#page.experiences{
   background-size: cover;
   width: 100%;
   min-height: 100vh;
-  height: 103vh;
+  height: 130vh;
   margin-top: 10px;
 }
 
 main#page.skills{
   background-image: url(../static/skills.jpg);
   width: 206vh;
-  height: 101vh;
+  height: 100vh;
   display: inline-block;
   columns: 2;
+}
+
+main#page.portifolio{
+  background:rgb(244, 240, 37);
+  width: 206vh;
+  height: 103vh;
+}
+
+main#page.education{
+  background: rgb(20, 19, 19);
+  width: 206vh;
+  color: white;
+  height: 103vh;
+  padding: 100px 0px;
 }
 
 main#page.contact{
@@ -782,8 +796,93 @@ section.experience2{
   left: 0;
   width: 50%;
   height: 100%;
-  
 }
+
+
+/* Education */
+.titleeduca h2{
+  color: white;
+  font-size: 75px;
+  width: 1130px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.boxedu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.textin{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.cardedu{
+  height: 600px;
+  width: 505px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cardedu i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
+}
+
+.cursos{
+  margin-bottom: 10px;
+}
+
+.certificacao{
+  color: rgb(159, 156, 156);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.pra p{
+  color: #fcfc;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 26px;
+}
+
+.cardedu .button1{
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  transition: .4s;  
+}
+
+
+.cardedu .button1:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: default;
+  font-size: 36px;
+}
+
+
+
+
+
 
 /* /Skills/ */
 
@@ -1015,6 +1114,7 @@ svg circle:nth-child(2){
   stroke-dashoffset: 100;
 }
 
+
 .card5:nth-child(1) svg circle:nth-child(2){
   stroke-dasharray: calc(520 - (42 * 80) / 100);
   stroke: #ff04f7;
@@ -1033,7 +1133,49 @@ svg circle:nth-child(2){
 }
 
 
+/* Portifolio */
+.portifolio{
+  background-color: #f6f1f1;
+  height: 50vh;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+}
 
+.breve{
+  background-color: #333;
+  width: 1000px;
+  color: #fff;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+.breve p{
+  font-weight: 500;
+  font-size: 29px;
+}
+
+.porti{
+  display: block;
+  text-align: center;
+  margin-top: -10px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.titleporti{
+  margin-top: -90px;
+  color: #333;
+  font-size: 75px;
+  text-align: center;
+}
 
 
 
